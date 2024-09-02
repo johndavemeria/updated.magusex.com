@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>magusex.com</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+                    }
+
+            body{
+                
+                
+                
+                background-color: rgb(255, 255, 255);
+            }
+            .head{
+                position: relative;
+                
+            }
+            p{
+                position: relative;
+                
+                font-size: 1.5em;
+            }
+            .logout{
+                top: 0;
+                right: 0;
+                margin: 10px;
+                text-decoration: none;
+                color: black;
+                position: absolute;
+                font-size: 1em;
+                cursor: pointer;
+                z-index: 1;
+                border: 2px solid black;
+                width: 70px;
+                padding: 5px;
+                height: 40px;
+                border-radius: 5px;
+                text-align: center;
+                transition: 0.5s;
+            }
+            .logout:hover{
+                color: white;
+                background-color: black;
+            }
+            .wrapper{
+                text-align: center;
+                
+            }
+            .container{
+            align-items: center;
+            display: none;
+            position: fixed;
+            width: 200px;
+            height: 150px;
+            background-color: white;
+            justify-content: space-between;
+            border: 2px solid black;
+            top: 40%;
+            right: 40%;
+            text-align: center;
+            border-radius: 40px;
+            z-index: 1;
+            }
+            .container, .btn-logout{
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+            }
+           #yes:hover{  
+            background-color: lightgreen;
+
+           }
+           #no:hover{
+            background-color: lightcoral;
+           }
+           .pic{
+            cursor: pointer;
+            
+            -webkit-transition: -webkit-transform 1s;
+           }
+           .pic:hover{
+            -webkit-transform: rotate(360deg) translateX(0);
+           }
+           .menu{
+            left: 10px;
+            top: 10px;
+            display: contents;
+            margin: 10px;
+            position: fixed;
+            z-index: 2;
+            cursor: pointer;
+           }
+           .left-nav{
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 190px;
+            justify-content: center;
+            background-color: antiquewhite;
+            margin: 0;
+            z-index: 1;
+            transform: translateX(-200px);
+            transition: transform 0.5 ease;
+            transition: 0.5s;
+            position: fixed;
+            background-color: black;
+           }
+           .left-nav.active{
+            transform: translateX(0);
+           }
+           .left-nav p{
+            font-size: 0.5em;
+            position: relative;
+            display: inline;
+           }
+           .left-con{
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 10px;
+           }
+           .profile{
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+           }
+
+        .main-profile{
+            height: 100%;
+            width: 50%;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            top: 0;
+            right: 0;
+            position: fixed;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            z-index: 1;
+            transform: translateX(2000px);
+            transition: transform 0.5 ease;
+            transition: 0.5s;
+        }
+        .main-profile.active{
+            transform: translateX(0);
+        }
+        .main-profile img{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            border: 2px solid black;
+        }
+        .main-profile p{
+            font-size: 1em;
+        }
+        label{
+            display: block;
+            width: 200px;
+            background: #e3362c;
+            color: #fff;
+            padding: 12px;
+            margin: 10px auto;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        .pic2{
+            display: none;
+        }
+        .bio{
+            height: 100px;
+            width: 200px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #save-bio{
+            display: block;
+            border: none;
+            width: 100px;
+            background: #e3362c;
+            color: #fff;
+            padding: 12px;
+            margin: 10px auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <button class="logout" id="logout">Log out</button>
+        </header>
+        <div class="nav-btn">
+            <span class="material-symbols-outlined menu" >
+                menu
+                </span>
+            
+        </div>
+        <div class="left-nav">
+            <div class="left-con">
+            <span class="material-symbols-outlined profile">
+                person
+                <p>Profile</p>
+                </span>
+            
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="head">
+                <img src="play.png" width="100px" class="pic">
+                <h1>MAGUSEX.COM</h1>
+
+            </div>
+            <video controls  muted loop src="magusex.mp4">
+            <source src="magusex.mp4">
+            <source src="magusex.mp4">
+            This browser does not support HTML5
+        </video>
+        <p>"kaklase kong sa coding babad jinabol ko sa com lab"</p>
+    </div>
+    <div class="container" id="container">
+        <p>are you sure?</p>
+        <button class="btn-logout" id="yes">yes</button>
+        <button class="btn-logout" id="no">no</button>
+    </div>
+    <div class="main-profile">
+        <div class="con1">
+            <h1>YOUR PROFILE</h1>
+            <img src="magusex.png" id="profile-pic">
+            <label for="input-file">update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="pic2">
+            <p>Username: <span id="username"></span></p>
+            <textarea placeholder="Add bio" class="bio" id="bio"></textarea>
+            <button id="save-bio">Save Bio</button>
+        </div>
+    </div>
+    <script>
+        let profilePic = document.getElementById("profile-pic");
+        let inputFile = document.getElementById("input-file");
+        
+
+        inputFile.onchange = function(){
+            profilePic.src = URL.createObjectURL(inputFile.files[0]);
+        }
+
+        let bioInput = document.getElementById("bio");
+        let saveBioButton = document.getElementById("save-bio");
+
+        // Load bio from localStorage on page load
+        window.onload = function() {
+            document.getElementById("bio").value = localStorage.getItem("bio") || "";
+            
+        }
+        // Save bio to localStorage
+        saveBioButton.onclick = function() {
+            let bio = bioInput.value;
+            localStorage.setItem("bio", bio);
+            alert("Bio saved!");
+        }
+
+    </script>
+    <script src="script1.js"></script>
+    <script>document.getElementById("username").textContent = localStorage.getItem("username") || "Guest";</script>
+    </body>
+</html>
